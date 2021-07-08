@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register at Practice form box","fill each field of register with Excel data","SUCCESS","2021-07-06T15:46:31.6297195-05:00[America/Bogota]","0.0","38.41"
+"Register at Practice form box","fill each field of register with Faker data","SUCCESS","2021-07-07T17:21:39.5719882-05:00[America/Bogota]","0.0","39.21"
+"Register at Practice form box","fill each field of register with file config.properties data","SUCCESS","2021-07-08T11:02:21.7064927-05:00[America/Bogota]","0.0","23.97"
