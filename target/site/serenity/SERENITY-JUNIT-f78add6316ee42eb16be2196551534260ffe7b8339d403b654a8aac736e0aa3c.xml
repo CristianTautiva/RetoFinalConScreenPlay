@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Register at Practice form box" skipped="0" tests="1" time="38.41" timestamp="2021-07-06 03:46:31"><testcase name="fill each field of register with Excel data"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Register at Practice form box" skipped="0" tests="1" time="23.08" timestamp="2021-07-09 11:31:31"><testcase name="fill each field of register with Excel data"><failure message="&#10;Expected: equalToIgnoringCase(&quot;Thanks for submitting the for&quot;)&#10;     but: was Thanks for submitting the form" type="java.lang.AssertionError">
+Expected: equalToIgnoringCase("Thanks for submitting the for")
+     but: was Thanks for submitting the form</failure><system-err>
+Expected: equalToIgnoringCase("Thanks for submitting the for")
+     but: was Thanks for submitting the form&#13;
+com.demoqa.automation.tasks.Validations.performAs(Validations.java:22)&#13;
+com.demoqa.test.stepdefinitions.RegisterFormStepDefinitions.heShouldSeeItAMessageSuccesfulUsingExcel(RegisterFormStepDefinitions.java:53)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

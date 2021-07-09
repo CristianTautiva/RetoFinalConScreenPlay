@@ -6,11 +6,11 @@ import com.demoqa.automation.tasks.FillAllFieldsWithFaker;
 import com.demoqa.automation.tasks.FillAllFieldsWithProperties;
 import com.demoqa.automation.tasks.Validations;
 import com.demoqa.automation.ui.RegisterFormPage;
+import com.demoqa.automation.utils.SpecialMethods;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -33,18 +33,25 @@ public class RegisterFormStepDefinitions {
     @Given("^that a web user wants to register in demoqa$")
     public void thatAWebUserWantsToRegisterInDemoqa() {
         theActorInTheSpotlight().attemptsTo(OpenTheBrowser.on(RegisterFormPage.URL));
+        SpecialMethods.takeScreenShotShortPage(driver);
     }
 
 
     @When("^he fills all the requested fields in text box register section with excel$")
     public void heFillsAllTheRequestedFieldsInTextBoxRegisterSectionWithExcel() {
+
         theActorInTheSpotlight().attemptsTo(FillAllFieldsWithExcel.dataInjectionSheet());
+        SpecialMethods.takeScreenShotFullPage(driver);
+
     }
 
     @Then("^he should see it a message succesful using excel\\.$")
     public void heShouldSeeItAMessageSuccesfulUsingExcel() {
-       theActorInTheSpotlight().attemptsTo(Validations.compareText());
-       Serenity.takeScreenshot();
+
+        //SpecialMethods.takeScreenShot(driver);
+        SpecialMethods.takeScreenShotShortPage(driver);
+        theActorInTheSpotlight().attemptsTo(Validations.compareText());
+
     }
 
     //Scenarios de inyeccion de datos con faker
@@ -57,7 +64,7 @@ public class RegisterFormStepDefinitions {
     @Then("^he should see it a message succesful using faker\\.$")
     public void heShouldSeeItAMessageSuccesfulUsingFaker() {
         theActorInTheSpotlight().attemptsTo(Validations.compareText());
-        Serenity.takeScreenshot();
+
     }
 
     //Scenarios de inyeccion de datos con conf.properties
@@ -70,7 +77,7 @@ public class RegisterFormStepDefinitions {
     @Then("^he should see it a message succesful using properties\\.$")
     public void heShouldSeeItAMessageSuccesfulUsingProperties() {
         theActorInTheSpotlight().attemptsTo(Validations.compareText());
-        Serenity.takeScreenshot();
+
     }
 
 }

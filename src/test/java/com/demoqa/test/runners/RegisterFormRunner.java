@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/register.feature",
         glue = "com.demoqa.test.stepdefinitions",
         snippets = SnippetType.CAMELCASE,
-        tags = "@smokeTestProperties")
+        tags = "@smokeTestExcel")
 
 public class RegisterFormRunner {
 }

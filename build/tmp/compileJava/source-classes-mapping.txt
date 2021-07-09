@@ -1,22 +1,22 @@
 com/demoqa/automation/tasks/FillAllFieldsWithFaker.java
  com.demoqa.automation.tasks.FillAllFieldsWithFaker
-com/demoqa/automation/interactions/OpenTheBrowser.java
- com.demoqa.automation.interactions.OpenTheBrowser
-com/demoqa/automation/utils/Javascript.java
- com.demoqa.automation.utils.Javascript
-com/demoqa/automation/utils/Excel.java
- com.demoqa.automation.utils.Excel
-com/demoqa/automation/ui/RegisterFormPage.java
- com.demoqa.automation.ui.RegisterFormPage
-com/demoqa/automation/questions/GetRegisterQuestion.java
- com.demoqa.automation.questions.GetRegisterQuestion
+com/demoqa/automation/tasks/Validations.java
+ com.demoqa.automation.tasks.Validations
 com/demoqa/automation/models/DataInjection.java
  com.demoqa.automation.models.DataInjection
-com/demoqa/automation/tasks/FillAllFieldsWithProperties.java
- com.demoqa.automation.tasks.FillAllFieldsWithProperties
+com/demoqa/automation/interactions/OpenTheBrowser.java
+ com.demoqa.automation.interactions.OpenTheBrowser
+com/demoqa/automation/utils/Excel.java
+ com.demoqa.automation.utils.Excel
+com/demoqa/automation/utils/Javascript.java
+ com.demoqa.automation.utils.Javascript
+com/demoqa/automation/questions/GetRegisterQuestion.java
+ com.demoqa.automation.questions.GetRegisterQuestion
+com/demoqa/automation/ui/RegisterFormPage.java
+ com.demoqa.automation.ui.RegisterFormPage
 com/demoqa/automation/tasks/FillAllFieldsWithExcel.java
  com.demoqa.automation.tasks.FillAllFieldsWithExcel
 com/demoqa/automation/utils/SpecialMethods.java
  com.demoqa.automation.utils.SpecialMethods
-com/demoqa/automation/tasks/Validations.java
- com.demoqa.automation.tasks.Validations
+com/demoqa/automation/tasks/FillAllFieldsWithProperties.java
+ com.demoqa.automation.tasks.FillAllFieldsWithProperties
