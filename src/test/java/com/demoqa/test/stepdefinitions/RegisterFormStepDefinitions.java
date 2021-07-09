@@ -41,7 +41,7 @@ public class RegisterFormStepDefinitions {
     public void heFillsAllTheRequestedFieldsInTextBoxRegisterSectionWithExcel() {
 
         theActorInTheSpotlight().attemptsTo(FillAllFieldsWithExcel.dataInjectionSheet());
-        SpecialMethods.takeScreenShotFullPage(driver);
+        SpecialMethods.takeScreenShotShortPage(driver);
 
     }
 
@@ -59,11 +59,13 @@ public class RegisterFormStepDefinitions {
     @When("^he fills all the requested fields in text box register section with faker$")
     public void heFillsAllTheRequestedFieldsInTextBoxRegisterSectionWithFaker() {
         theActorInTheSpotlight().attemptsTo(FillAllFieldsWithFaker.dataInjectionFaker());
+        SpecialMethods.takeScreenShotShortPage(driver);
     }
 
     @Then("^he should see it a message succesful using faker\\.$")
     public void heShouldSeeItAMessageSuccesfulUsingFaker() {
         theActorInTheSpotlight().attemptsTo(Validations.compareText());
+        SpecialMethods.takeScreenShotShortPage(driver);
 
     }
 
@@ -77,6 +79,7 @@ public class RegisterFormStepDefinitions {
     @Then("^he should see it a message succesful using properties\\.$")
     public void heShouldSeeItAMessageSuccesfulUsingProperties() {
         theActorInTheSpotlight().attemptsTo(Validations.compareText());
+        SpecialMethods.takeScreenShotShortPage(driver);
 
     }
 
